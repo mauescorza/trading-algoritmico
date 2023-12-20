@@ -38,12 +38,13 @@ This Python script demonstrates the use of Long Short-Term Memory (LSTM) network
    modelo.add(Dense(units=dim_salida))
    modelo.compile(optimizer='rmsprop', loss='mse')
    modelo.fit(X_train, Y_train, epochs=10, batch_size=20)
-   Validate the model and make predictions:
+
+7. Validate the model and make predictions:
 
    ```bash
    prediccion = modelo.predict(X_test)
    prediccion = sc.inverse_transform(prediccion)
 
-7. Evaluate the model performance using Mean Squared Error (MSE) and R-squared (R2) metrics.
+8. Evaluate the model performance using Mean Squared Error (MSE) and R-squared (R2) metrics.
 
-8. Feel free to modify and experiment with the parameters to see how they affect the model's predictions.
+9. Feel free to modify and experiment with the parameters to see how they affect the model's predictions.
